@@ -40,8 +40,8 @@ export function Process() {
   const progressHeight = isReducedMotion ? '100%' : `${scrollProgress * 100}%`;
 
   return (
-    <section id="processo" ref={sectionRef} className="py-24 lg:py-40 bg-brand-bg relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row gap-16 lg:gap-32">
+    <section id="processo" ref={sectionRef} className="w-full relative py-24 lg:py-40 bg-brand-bg overflow-hidden">
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row gap-16 lg:gap-32">
         {/* Sticky Title */}
         <div className="lg:w-1/3 lg:sticky lg:top-40 h-[fit-content]">
           <h2 className="font-mono text-xs text-brand-accent uppercase tracking-widest mb-6">

@@ -34,11 +34,11 @@ export function Psicologa() {
   return (
     <section 
       id="doutora" 
-      className={`py-24 lg:py-40 noise-bg section-doutora ${isFocused ? 'focused' : ''}`}
+      className={`w-full overflow-x-hidden py-24 lg:py-40 noise-bg section-doutora ${isFocused ? 'focused' : ''}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-12">
         <h2 className="font-mono text-xs text-brand-champagne uppercase tracking-widest flex items-center justify-center lg:justify-start mb-16">
           01 / A PSICÓLOGA
         </h2>

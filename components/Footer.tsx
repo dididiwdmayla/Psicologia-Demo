@@ -3,7 +3,7 @@ import { Logo } from './Logo';
 
 export function Footer() {
   return (
-    <footer className="bg-[#1A2733] text-brand-bg py-24 lg:py-32 relative z-10 w-full flex flex-col items-center">
+    <footer className="w-full overflow-x-hidden bg-[#1A2733] text-brand-bg py-24 lg:py-32 relative z-10 flex flex-col items-center">
       
       {/* Centered Large Info */}
       <div className="flex flex-col items-center mb-24 text-center px-6">

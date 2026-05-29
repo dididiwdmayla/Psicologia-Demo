@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+html, body {
+  @apply w-full overflow-x-hidden;
+  max-width: 100vw;
+}
+
+* {
+  max-width: 100vw;
+}
+
+.scroll-container {
+  max-width: none;
+}
+
 @theme {
   --color-brand-bg: var(--color-bg-primary);
   --color-brand-bg-secondary: var(--color-bg-secondary);

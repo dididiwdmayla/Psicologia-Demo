@@ -11,8 +11,8 @@ export function Contact() {
   };
 
   return (
-    <section id="contato" className="py-24 lg:py-40 bg-brand-bg">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+    <section id="contato" className="w-full overflow-x-hidden py-24 lg:py-40 bg-brand-bg">
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
         
         {/* Social */}
         <div className="flex flex-col justify-center">

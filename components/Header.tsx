@@ -28,7 +28,7 @@ export function Header() {
             : 'bg-transparent border-transparent py-6'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
+        <div className="w-full max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
           <Logo />
           
           {/* Desktop Nav */}

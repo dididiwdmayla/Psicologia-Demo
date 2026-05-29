@@ -39,10 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR" className={`${cormorant.variable} ${inter.variable} ${jetbrainsMono.variable} ${lora.variable}`}>
       <head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link
           rel="preload"
           href="/hero_consultorio.jpg"
@@ -56,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="image/jpeg"
         />
       </head>
-      <body className="antialiased font-sans bg-brand-bg text-brand-text overflow-x-hidden selection:bg-brand-accent selection:text-brand-bg" suppressHydrationWarning>
+      <body className="w-full max-w-[100vw] overflow-x-hidden antialiased font-sans bg-brand-bg text-brand-text selection:bg-brand-accent selection:text-brand-bg" suppressHydrationWarning>
         <PageLoader />
         {children}
       </body>

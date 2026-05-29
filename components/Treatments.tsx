@@ -11,8 +11,8 @@ const iconMap: Record<string, React.ElementType> = {
 
 export function Treatments() {
   return (
-    <section id="tratamentos" className="py-24 lg:py-40 bg-brand-bg-secondary">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section id="tratamentos" className="w-full overflow-x-hidden py-24 lg:py-40 bg-brand-bg-secondary">
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-12">
         <div className="mb-20">
           <h2 className="font-mono text-xs text-brand-accent uppercase tracking-widest mb-6">
             03 / TRATAMENTOS

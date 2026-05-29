@@ -11,7 +11,7 @@ export function Hero() {
   const config = contentExport.siteConfig;
 
   return (
-    <section className="relative min-h-[92vh] flex items-center justify-center pt-24 bg-brand-bg overflow-hidden noise-bg">
+    <section className="relative w-full min-h-[92vh] flex items-center justify-center pt-24 bg-brand-bg overflow-hidden noise-bg">
       <div className="max-w-7xl mx-auto w-full px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-[55%_45%] gap-12 lg:gap-8 items-center z-10">
         
         {/* Left: Content */}

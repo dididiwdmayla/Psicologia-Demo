@@ -74,7 +74,7 @@ export const Pillars = ({ pillars }: PillarsProps) => {
   if (!hasMounted) return null;
 
   return (
-    <section className="py-24 px-6 lg:py-40" aria-labelledby="pilares-titulo">
+    <section className="w-full overflow-x-hidden py-24 px-6 lg:py-40" aria-labelledby="pilares-titulo">
       <h2 className="font-mono text-xs text-brand-accent uppercase tracking-widest text-center mb-6">
         02 / COMO FUNCIONA
       </h2>
@@ -82,7 +82,7 @@ export const Pillars = ({ pillars }: PillarsProps) => {
         Do primeiro contato ao acompanhamento.
       </h3>
 
-      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="w-full max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {pillars.map((pillar, index) => {
           const isActive = isMobile
             ? activeIndex === index

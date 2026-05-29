@@ -37,7 +37,7 @@ export default function Page() {
   };
 
   return (
-    <main className="w-full relative selection:bg-brand-accent selection:text-brand-bg pb-0">
+    <main className="w-full overflow-x-hidden relative selection:bg-brand-accent selection:text-brand-bg pb-0">
       {!introFinished && <EnvelopeIntro onComplete={handleEnvelopeComplete} />}
       {!introFinished && triggerReveal && <InkReveal isReady={true} />}
 
