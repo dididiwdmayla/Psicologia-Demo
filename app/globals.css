@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: var(--color-bg-primary);
+  --color-brand-bg-secondary: var(--color-bg-secondary);
+  --color-brand-bg-tertiary: var(--color-bg-tertiary);
+  --color-brand-text: var(--color-text-primary);
+  --color-brand-text-secondary: var(--color-text-secondary);
+  --color-brand-accent: var(--color-sage);
+  --color-brand-sage: var(--color-sage);
+  --color-brand-champagne: var(--color-gold);
+  --color-brand-border: var(--color-border);
+  --color-brand-border-accent: var(--color-border-hover);
+
+  /* Acentos — paleta psicologia */
+  --color-sage-light: #D4E0CC;
+  --color-lavender: #D8D4E6;
+  --color-lavender-light: #EBE8F4;
+  --color-warm-white: #F7F5F0;
+
+  --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  /* Fundos */
+  --color-bg-primary: #FAFAF8;
+  --color-bg-secondary: #F4F6F3;
+  --color-bg-tertiary: #EDF1EC;
+
+  /* Texto */
+  --color-text-primary: #2D2D2B;
+  --color-text-secondary: #5C5C58;
+  --color-text-muted: #8A8A85;
+
+  /* Acentos — paleta psicologia */
+  --color-sage: #B8C9A8;          /* verde-sálvia (mantido da Alvorada) */
+  --color-gold: #C8A87A;          /* dourado champanhe (mantido como detalhe) */
+
+  /* Funcionais */
+  --color-border: #E0DED9;
+  --color-border-hover: #B8C9A8;
+  --color-focus: #B8C9A8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .noise-bg {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+}
+
+@keyframes breathe {
+  0% { transform: scale(1.0); }
+  50% { transform: scale(1.015); }
+  100% { transform: scale(1.0); }
+}
+
+@keyframes ornament-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.9; }
+}
+
+.animate-breathe {
+  animation: breathe 8s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.animate-ornament {
+  animation: ornament-pulse 6s ease-in-out infinite;
+}
+
+@keyframes halo-breathe {
+  0%, 100% { opacity: 0.35; transform: scale(1.0); }
+  50%      { opacity: 0.55; transform: scale(1.05); }
+}
+
+.halo-layer {
+  animation: halo-breathe 8s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.section-doutora {
+  background-color: var(--color-brand-bg-secondary);
+  transition: background-color 900ms ease-in-out;
+}
+
+.section-doutora.focused {
+  background-color: #D8D4E6;
+}
+
+@media (prefers-reduced-motion) {
+  .animate-breathe, 
+  .animate-ornament,
+  .halo-layer {
+    animation: none !important;
+    transform: none !important;
+  }
+  .section-doutora {
+    transition: none !important;
+  }
+}
